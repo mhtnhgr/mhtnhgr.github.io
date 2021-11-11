@@ -1,0 +1,163 @@
+/* Reset CSS */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/* Block scroll */
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 25px;
+    background-color: #000;
+    z-index: 1;
+}
+
+#top-nav {
+    position: relative;
+}
+
+#top-nav div {
+    float: left;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+#top-nav>div {
+    position: absolute;
+}
+
+#top-nav .activities-tile {
+    left: 0;
+    padding: 0 10px;
+}
+
+#top-nav .app-title {
+    left: 80px;
+    padding: 0 10px;
+}
+
+#top-nav .date-time {
+    width: 100%;
+}
+
+#top-nav .notification {
+    left: calc(50% + 60px);
+}
+
+#top-nav .percussion {
+    right: 128px;
+}
+
+#top-nav .system-icon {
+    right: 0px;
+}
+
+#top-nav .system-icon div {
+    padding: 0 3px;
+}
+
+#top-nav i:hover {
+    background-color: #ccc;
+}
+
+#side-bar {
+    position: fixed;
+    top: 25px;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    background-color: rgb(48, 10, 36);
+    z-index: 1;
+}
+
+#side-bar a {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    padding: 7px;
+}
+
+#side-bar a:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+#side-bar .all-app-icon {
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+}
+
+#side-bar img {
+    width: 100%;
+}
+
+#content {
+    position: relative;
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-right: 0;
+}
+
+#content .section-content {
+    left: 0px;
+    position: absolute;
+    width: calc(100vw - 67px);
+    height: calc(100vh - 25px);
+    /* z-index: -1; */
+}
+
+#content #home {
+    background-color: #FFE1BD;
+    background-image: url(../img/home/home_image.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#content img {
+    height: 100%;
+}
+
+#content #video {
+    padding-top: 25px;
+    top: calc(100vh - 25px);
+    background-color: #FFE1BD;
+}
+
+#content #video iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#content #heart {
+    padding-top: 25px;
+    top: calc(200vh - 50px);
+    background-color: #FFE1BD;
+}
+
+#content #all-app {
+    padding-top: 25px;
+    top: calc(300vh - 75px);
+    background-color: #FFE1BD;
+}
